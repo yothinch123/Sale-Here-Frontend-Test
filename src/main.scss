@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+}
+
+* {
+  font-family: "Prompt", sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-image: url("./assets/images/bg.jpg");
+  background-size: auto 100%;
+  font-family: "Prompt", sans-serif;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 90vh;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin: auto;
+}
+
+.logo-head {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: 200px;
+}
+
+.title {
+  height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 37px;
+  font-weight: bold;
+  color: #383838;
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.c-input-name {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 37px;
+  font-weight: bold;
+  color: #383838;
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.input-name {
+  width: 600px;
+  height: 60px;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid lightgrey;
+  font-size: 34px;
+  color: #4e4e4e;
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.c-button-submit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.button-submit {
+  display: inline-block;
+  height: 60px;
+  width: 120px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  color: #ffffff;
+  font-family: "Prompt", sans-serif;
+  background-image: radial-gradient(ellipse farthest-corner at top left,#c41417 0%, #b31315 100%);
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+@keyframes showBottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes showRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.button5 {background-color: #555555;} 
+
+.button-submit,
+.button-create,
+.button-create-submit,
+.button-back,
+.button-join {
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  height: 65px;
+  width: 130px;
+}
+
+.button-create:hover {
+  height: 65px;
+  width: 220px;
+}
+
+.button-create {
+  display: inline-block;
+  height: 60px;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  color: #ffffff;
+  font-family: "Prompt", sans-serif;
+  background-image: radial-gradient(ellipse farthest-corner at top left,#c41417 0%, #b31315 100%);
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.button-join:hover {
+  font-size: 30px;
+}
+
+.button-join {
+  display: inline-block;
+  height: 60px;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  color: #4e4e4e;
+  font-family: "Prompt", sans-serif;
+  background-color: transparent;
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.c-button-create-room {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.c-button-join-room {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-create-submit {
+  display: inline-block;
+  height: 60px;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  color: #ffffff;
+  font-family: "Prompt", sans-serif;
+  background-image: radial-gradient(ellipse farthest-corner at top left,#c41417 0%, #b31315 100%);
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.button-create-submit:hover {
+  height: 65px;
+  width: 220px;
+}
+
+.button-back:hover {
+  font-size: 30px;
+}
+
+.button-back {
+  display: inline-block;
+  margin-top: 20px;
+  height: 60px;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  color: #4e4e4e;
+  font-family: "Prompt", sans-serif;
+  background-color: transparent;
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.c-create-page {
+  display: flex;
+  justify-content: center;
+}
+
+.title-chat-name {
+  font-size: 37px;
+  font-weight: bold;
+  color: #383838;
+  padding-left: 10px;
+  animation: showBottomToTop 1s ease-in-out forwards;
+}
+
+.c-chat-content {
+  position: relative;
+  width: 97%;
+  height: 90%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  animation: showBottomToTop 1s ease-in-out forwards;
+  margin: auto;
+}
+
+.c-chat-username {
+  padding-left: 20px;
+  animation: showRightToLeft 1s ease-in-out forwards;
+}
+
+.c-input-chat {
+  position: absolute;
+  width: 100%;
+  font-size: 37px;
+  font-weight: bold;
+  color: #383838;
+  bottom: 0;
+  left: 0;
+  animation: showBottomToTop 2s ease-in-out forwards;
+}
+
+.input-chat {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: 3px solid lightgrey;
+  font-size: 34px;
+  color: #4e4e4e;
+  box-sizing: border-box;
+}
+
+.c-chat-message {
+  margin-left: 30px;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  animation: showRightToLeft 2s ease-in-out forwards;
+}
+
+::placeholder {
+  color: #999;
+  position: absolute;
+  font-size: 10px;
+  bottom: 0px;
+  right: 5px;
+}
